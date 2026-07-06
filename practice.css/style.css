@@ -1,0 +1,147 @@
+body{margin: 0;
+    padding: 0;
+    background-color: ghostwhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.welcome {
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    background-color: aqua;
+}
+nav ul {
+    list-style-type: none;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 80px;
+    align-items: center;
+    width: 100%;
+}
+nav ul li a{
+
+padding:12px 18px;
+
+display:inline-block;
+
+}
+
+nav ul li a:hover{
+
+background:black;
+color:white;
+ 
+}
+nav{
+    position:sticky;
+    top:0;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: lightgray;
+}
+.hero img{
+width:700px;
+max-width:100%;
+height: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+.menu {
+    background-color: darkorange;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.menu-items {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 20px;
+}
+.pizza, .pasta, .burger, .fries, .drinks {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 12px;
+}
+.menu-items button {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+.menu-items button:hover {
+    background-color: honeydew;
+    color: #000;
+}
+button{
+
+cursor:pointer;
+
+}
+#Order {
+    background-color: darkorange;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+#Contact {
+    background-color: skyblue;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+footer ul li a {
+    color: black;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    background-color: gainsboro;
+    padding: 1rem;
+}
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+input,
+textarea{
+
+width:100%;
+
+max-width:500px;
+
+padding:10px;
+
+}
+@media(max-width:768px){
+
+.menu-items{
+
+grid-template-columns:1fr;
+
+}
+
+.hero{
+
+flex-direction:column;
+
+}
+
+}
