@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://127.0.0.1:5500/practice/practice.html#home -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice web page</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family:sans-serif;
+        }
+        h1{
+            background: red;
+            border: 1rem solid wheat;
+            padding: 1rem;
+            margin: auto;
+            width: 50vw;
+            height: 5vh;
+            text-align: center;
+        }
+        p{
+            background:blue;
+            color: white;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: 1rem solid grey;
+
+        }
+        .p_card{
+            background: tomato;
+            color: white;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: 1rem solid darkblue;
+        }
+        .f_card{
+            background: darkgreen;
+            color: whitesmoke;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: 1rem solid black;
+        }
+        .fp_card{
+            background: whitesmoke;
+            color: black;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: 1rem solid;
+            display: block;
+        }
+        .continar{
+            background: darkgrey;
+            padding: 1rem;
+            margin: 1.5rem;
+            border: 1rem solid orange;
+        }
+        .n_card{
+            background:turquoise;
+            padding: 2rem;
+            margin: 1rem 0;
+            text-align: center;
+        }
+        .n_card ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0;
+            margin: 0;
+        }
+        .n_card a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-family: serif;
+
+        }
+        .n_card a:hover{
+            background: white;
+            color: #000;
+            border-radius: 5px;
+        }
+        .d_card{
+    gap: 5px;
+    margin: 0.5em;rem;
+    padding: 0.5rem;
+border-radius: 5px;
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="n_card">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/practice/practice.html#home">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/practice/practice.html#about_me">About Me</a></li>
+           <li> <a href="http://127.0.0.1:5500/practice/practice.html#contact_me">Contcat Me</a></li> 
+            </ul>
+        </nav>
+    </header>
+   <h1>This is For Practice</h1> 
+   <div id="home" class="continar">
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt perferendis voluptatum quas at repudiandae omnis. Alias, itaque? Facilis, facere impedit ullam repudiandae ea minima aspernatur laboriosam, libero nihil deserunt modi!</p>
+   <div id="about_me" class="p_card">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam non eaque doloribus nostrum consequatur nisi inventore facilis ullam, quas deleniti iusto ducimus maxime quaerat similique quidem. Id vero natus placeat.
+</div>
+   <form class="f_card">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta natus perferendis reiciendis consectetur nemo iusto, modi nisi voluptatem id eius! Eveniet ab doloremque quis aperiam illum quae necessitatibus hic cumque.
+   </form>
+   <footer id="contact_me" class="fp_card">
+      <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required=""><br>
+    <label for="email">Email:</label>
+<input type="email" id="email" name="email" required=""><br>
+    <label for="message">Message:</label>
+    <textarea name="message" id="message" cols="20" rows="5"></textarea>
+    <div class="d_card">
+<button type="submit">Submit</button>
+<button type="reset">Clear</button>
+    </div>
+   </footer></div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
