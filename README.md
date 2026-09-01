@@ -29,11 +29,12 @@ style.css
 images/
 ## 🚀 Live Demo
 
-👉 
+👉  https://mdmalekmiah1704-dev.github.io/bou-er-dua-restaurant/
 
 ## 📸 Screenshot
 
-![Bouyer Dua Restaurant Screenshot](your-screenshot-link-here)
+<img width="1470" height="956" alt="Screenshot 2026-07-06 at 10 16 58 PM" src="https://github.com/user-attachments/assets/e3a6df51-2da8-44f4-8745-2fa6ebe96c93" />
+
 
 ## 👨‍💻 Author
 
